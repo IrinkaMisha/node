@@ -1,0 +1,9 @@
+rw\ktc\cms\nodedata\service\hib\NodeServiceImpl.class
+rw\ktc\cms\nodedata\service\hib\HistNodeServiceGeneric.class
+rw\ktc\cms\nodedata\service\hib\StateServiceHib.class
+rw\ktc\cms\nodedata\service\hib\HibPackageScan.class
+rw\ktc\cms\nodedata\service\hib\GenericHibernateDAO.class
+rw\ktc\cms\nodedata\service\hib\ServiceHib.class
+rw\ktc\cms\nodedata\service\hib\RuleServiceHib.class
+rw\ktc\cms\nodedata\service\hib\NodeServiceGeneric.class
+rw\ktc\cms\nodedata\service\hib\HistNodeServiceHib.class
