@@ -37,14 +37,14 @@
             <version>1.7.7</version>
             <scope>test</scope>
         </dependency>
-
+<!--
         <dependency>
             <groupId>com.ibm.db2</groupId>
             <artifactId>db2jcc4</artifactId>
             <version>4.18.60</version>
             <scope>test</scope>
         </dependency>
-
+-->
         <!--подключение хибернета-->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -84,7 +84,7 @@
 
     </dependencies>
     <build>
-        <directory>${target.directory}</directory>
+        <directory>target</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

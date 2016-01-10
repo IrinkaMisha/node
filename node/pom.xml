@@ -40,7 +40,7 @@
     </dependencies>
 
     <build>
-	<directory>${target.directory}</directory>
+	<directory>target</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
