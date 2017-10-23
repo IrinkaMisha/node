@@ -4,7 +4,7 @@
 
     <groupId>by.imix.cms</groupId>
     <artifactId>node</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0-SNAPSHOT</version>
     <description>This help to store and manage different type objects as one entity</description>
 
     <properties>
