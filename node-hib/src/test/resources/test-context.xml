@@ -17,48 +17,48 @@
     <import resource="classpath:dao-test.xml"/>
 
     <!--Включаем разбор JSON при вытаскивании данных из БД-->
-    <bean id="nodeStateReader" class="rw.ktc.cms.nodedata.NodeStateReaderJSON"/>
-    <bean id="nodeStateReaderService" class="rw.ktc.cms.nodedata.NodeStateReaderService">
+    <bean id="nodeStateReader" class="by.imix.cms.nodedata.NodeStateReaderJSON"/>
+    <bean id="nodeStateReaderService" class="by.imix.cms.nodedata.NodeStateReaderService">
         <property name="nodeStateReader" ref="nodeStateReader"/>
     </bean>
 
-    <bean id="user3150" class="rw.ktc.cms.nodedata.NodeImpl"><property name="id" value="2"/></bean>
+    <bean id="user3150" class="by.imix.cms.nodedata.NodeImpl"><property name="id" value="2"/></bean>
 
-    <bean id="stSh" class="rw.ktc.cms.nodedata.state.StateCreateDefault">
+    <bean id="stSh" class="by.imix.cms.nodedata.state.StateCreateDefault">
         <property name="description" value="Пользователь видит"/>
         <property name="id" value="1"/>
     </bean>
 
-    <bean id="stCorr" class="rw.ktc.cms.nodedata.state.StateCreateDefault">
+    <bean id="stCorr" class="by.imix.cms.nodedata.state.StateCreateDefault">
         <property name="description" value="Пользователь может редактировать"/>
         <property name="id" value="2"/>
     </bean>
 
-    <bean id="stRem" class="rw.ktc.cms.nodedata.state.StateCreateDefault">
+    <bean id="stRem" class="by.imix.cms.nodedata.state.StateCreateDefault">
         <property name="description" value="Пользователь может удалять"/>
         <property name="id" value="3"/>
     </bean>
 
-    <bean id="stHyst" class="rw.ktc.cms.nodedata.state.StateCreateDefault">
+    <bean id="stHyst" class="by.imix.cms.nodedata.state.StateCreateDefault">
         <property name="description" value="Пользователь может читать историю"/>
         <property name="id" value="4"/>
     </bean>
 
-    <bean id="ruleCreateNode" class="rw.ktc.cms.nodedata.rules.Rule">
+    <bean id="ruleCreateNode" class="by.imix.cms.nodedata.rules.Rule">
         <property name="discription" value="Правило для создания случайного нода"/>
         <property name="ruleFlags">
-            <bean class="rw.ktc.cms.nodedata.rules.RuleFlags">
+            <bean class="by.imix.cms.nodedata.rules.RuleFlags">
                 <property name="add">
                     <list>
-                        <bean class="rw.ktc.cms.nodedata.NodeState">
+                        <bean class="by.imix.cms.nodedata.NodeState">
                             <constructor-arg name="state" ref="stSh"/>
                             <constructor-arg name="node" ref="user3150"/>
                         </bean>
-                        <bean class="rw.ktc.cms.nodedata.NodeState">
+                        <bean class="by.imix.cms.nodedata.NodeState">
                             <constructor-arg name="state" ref="stCorr"/>
                             <constructor-arg name="node" ref="user3150"/>
                         </bean>
-                        <bean class="rw.ktc.cms.nodedata.NodeState">
+                        <bean class="by.imix.cms.nodedata.NodeState">
                             <constructor-arg name="state" ref="stRem"/>
                             <constructor-arg name="node" ref="user3150"/>
                         </bean>
@@ -71,13 +71,13 @@
         </property>
     </bean>
 
-    <bean id="ruleEditNode" class="rw.ktc.cms.nodedata.rules.Rule">
+    <bean id="ruleEditNode" class="by.imix.cms.nodedata.rules.Rule">
         <property name="discription" value="Правило для создания случайного нода"/>
         <property name="ruleFlags">
-            <bean class="rw.ktc.cms.nodedata.rules.RuleFlags">
+            <bean class="by.imix.cms.nodedata.rules.RuleFlags">
                 <property name="add">
                     <list>
-                        <bean class="rw.ktc.cms.nodedata.NodeState">
+                        <bean class="by.imix.cms.nodedata.NodeState">
                             <constructor-arg name="state" ref="stHyst"/>
                             <constructor-arg name="node" ref="user3150"/>
                         </bean>
@@ -85,7 +85,7 @@
                 </property>
                 <property name="rem">
                     <list>
-                        <bean class="rw.ktc.cms.nodedata.NodeState">
+                        <bean class="by.imix.cms.nodedata.NodeState">
                             <constructor-arg name="state" ref="stCorr"/>
                             <constructor-arg name="node" ref="user3150"/>
                         </bean>

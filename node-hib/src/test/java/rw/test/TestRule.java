@@ -2,11 +2,11 @@ package rw.test;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import rw.ktc.cms.nodedata.Node;
-import rw.ktc.cms.nodedata.NodeImpl;
-import rw.ktc.cms.nodedata.NodeProperty;
-import rw.ktc.cms.nodedata.rules.Rule;
-import rw.ktc.cms.nodedata.rules.RulePerformer;
+import by.imix.cms.nodedata.Node;
+import by.imix.cms.nodedata.NodeImpl;
+import by.imix.cms.nodedata.NodeProperty;
+import by.imix.cms.nodedata.rules.Rule;
+import by.imix.cms.nodedata.rules.RulePerformer;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

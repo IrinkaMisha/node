@@ -6,12 +6,12 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import rw.ktc.cms.nodedata.Node;
-import rw.ktc.cms.nodedata.NodeImpl;
-import rw.ktc.cms.nodedata.rules.Rule;
-import rw.ktc.cms.nodedata.rules.RulePerformer;
-import rw.ktc.cms.nodedata.service.NodeService;
-import rw.ktc.cms.nodedata.service.RuleService;
+import by.imix.cms.nodedata.Node;
+import by.imix.cms.nodedata.NodeImpl;
+import by.imix.cms.nodedata.rules.Rule;
+import by.imix.cms.nodedata.rules.RulePerformer;
+import by.imix.cms.nodedata.service.NodeService;
+import by.imix.cms.nodedata.service.RuleService;
 
 import java.util.ArrayList;
 import java.util.List;
