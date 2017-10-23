@@ -60,12 +60,12 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>libs-snapshot</name>
-            <url>http://askbd-srv:8081/artifactory/libs-snapshot-local</url>
+            <url>https://raw.github.com/IrinkaMisha/node/master</url>
         </snapshotRepository>
         <repository>
             <id>central</id>
             <name>libs-release</name>
-            <url>http://askbd-srv:8081/artifactory/libs-release-local</url>
+            <url>https://raw.github.com/IrinkaMisha/node/master</url>
         </repository>
     </distributionManagement>
 </project>
