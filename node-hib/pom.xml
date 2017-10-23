@@ -16,6 +16,13 @@
         <spring.version>4.2.0.RELEASE</spring.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>IrinkaMisha-mvn-repository</id>
+            <url>https://github.com/imixguy/mvn_repository/raw/master</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 
         <!-- зависимость от node-->
