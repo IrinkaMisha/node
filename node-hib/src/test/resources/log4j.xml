@@ -39,7 +39,7 @@
     </appender>
 
 
-    <logger name="rw.ktc" additivity="false">
+    <logger name="by.imix" additivity="false">
         <level value="INFO"/>
         <appender-ref ref="a_file"/>
         <appender-ref ref="A_CONSOLE_ERROR"/>
