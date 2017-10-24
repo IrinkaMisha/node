@@ -56,16 +56,16 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>libs-snapshot</name>
-            <url>https://raw.github.com/IrinkaMisha/node/master</url>
-        </snapshotRepository>
-        <repository>
-            <id>central</id>
-            <name>libs-release</name>
-            <url>https://raw.github.com/IrinkaMisha/node/master</url>
-        </repository>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+        <!--<snapshotRepository>-->
+            <!--<id>snapshots</id>-->
+            <!--<name>libs-snapshot</name>-->
+            <!--<url>https://github.com/imixguy/mvn_repository/raw/master</url>-->
+        <!--</snapshotRepository>-->
+        <!--<repository>-->
+            <!--<id>central</id>-->
+            <!--<name>libs-release</name>-->
+            <!--<url>https://github.com/imixguy/mvn_repository/raw/master</url>-->
+        <!--</repository>-->
+    <!--</distributionManagement>-->
 </project>
